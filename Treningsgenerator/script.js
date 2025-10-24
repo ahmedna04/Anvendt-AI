@@ -447,11 +447,11 @@ const workouts = {
 function generateWorkout(category) {
     currentCategory = category;
     
-    // Få tilfeldig treningsøkt fra kategorien
+    
     const categoryData = workouts[category];
     const randomWorkout = categoryData.workouts[Math.floor(Math.random() * categoryData.workouts.length)];
     
-    // Oppdater UI
+    
     document.getElementById('workoutTitle').textContent = randomWorkout.title;
     document.getElementById('workoutImage').src = categoryData.image;
     document.getElementById('workoutImage').alt = category + ' trening';
@@ -470,10 +470,10 @@ function generateWorkout(category) {
         exercisesList.appendChild(exerciseDiv);
     });
     
-    // Vis workout display
+    
     document.getElementById('workoutDisplay').classList.add('active');
     
-    // Scroll til workout
+    
     document.getElementById('workoutDisplay').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
