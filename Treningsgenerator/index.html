@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treningsgenerator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Treningsgenerator</h1>
+            <p class="subtitle">En treningsguide laget av AI</p>
+        </header>
+
+        <div class="category-buttons">
+            <button class="category-btn" onclick="generateWorkout('styrke')">Styrke</button>
+            <button class="category-btn" onclick="generateWorkout('cardio')">Cardio</button>
+            <button class="category-btn" onclick="generateWorkout('yoga')">Yoga</button>
+            <button class="category-btn" onclick="generateWorkout('fullbody')">Full Body</button>
+        </div>
+
+        <div class="workout-display" id="workoutDisplay">
+            <div class="workout-header">
+                <h2 class="workout-title" id="workoutTitle"></h2>
+                <img class="workout-image" id="workoutImage" src="" alt="Treningsbilde">
+            </div>
+
+            <div class="exercises" id="exercisesList"></div>
+
+            <button class="generate-btn" onclick="regenerateWorkout()">Generer Ny Økt</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
